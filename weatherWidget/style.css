@@ -1,0 +1,209 @@
+/* Reset default styles for all elements */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Style the background of the body */
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #06283D; /* Background color */
+}
+
+/* Styles for the main container */
+.container{
+    position: relative;
+    width: 400px;
+    height: 105px;
+    background: #FFFFFF; /* Background color */
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.6s ease-out;
+}
+
+/* Styles for the search box */
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styles for the input field in the search box */
+.search-box input{
+    color: #06283D; /* Text color */
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+
+/* Styles for the input field's placeholder text */
+.search-box input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    color: #06283D; /* Placeholder text color */
+    text-transform: capitalize;
+}
+
+/* Styles for the search button */
+.search-box button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #06283D; /* Text color */
+    background: #DFF6FF; /* Background color */
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.4s ease;
+}
+
+/* Hover effect for the search button */
+.search-box button:hover{
+    color: #FFFFFF; /* Text color on hover */
+    background: #06283D; /* Background color on hover */
+}
+
+/* Styles for location icon in the search box */
+.search-box i{
+    position: absolute;
+    color: #06283D; /* Icon color */
+    font-size: 28px;
+}
+
+/* Styles for the main weather display box */
+.weather-box{
+    text-align: center;
+}
+
+/* Styles for the weather image */
+.weather-box img{
+    width: 60%;
+    margin-top: 30px;
+}
+
+/* Styles for the temperature display */
+.weather-box .temperature{
+    position: relative;
+    color: #06283D; /* Text color */
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
+
+/* Styles for the temperature unit (e.g., °C) */
+.weather-box .temperature span{
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+
+/* Styles for the weather description */
+.weather-box .description{
+    color: #06283D; /* Text color */
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* Styles for additional weather details */
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* Styles for humidity and wind sections */
+.weather-details .humidity, .weather-details .wind{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+}
+
+/* Styles for humidity section */
+.weather-details .humidity{
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+/* Styles for wind section */
+.weather-details .wind{
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+
+/* Styles for icons in humidity and wind sections */
+.weather-details i{
+    color: #06283D; /* Icon color */
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+/* Styles for text in humidity and wind sections */
+.weather-details span{
+    color: #06283D; /* Text color */
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* Styles for additional information text in humidity and wind sections */
+.weather-details p{
+    color: #06283D; /* Text color */
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Styles for the "Location not found" section */
+.not-found{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+
+/* Styles for the image in "Location not found" section */
+.not-found img{
+    width: 70%;
+}
+
+/* Styles for the text in "Location not found" section */
+.not-found p{
+    color: #06283D; /* Text color */
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+/* Animation styles for fadeIn effect */
+.weather-box, .weather-details{
+    scale: 0;
+    opacity: 0;
+}
+
+.fadeIn{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn{
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}

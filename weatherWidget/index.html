@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Google Fonts for styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Include your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App | By Bruno</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Search box for location input -->
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Enter your location">
+            <!-- Button for triggering the search -->
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <!-- Displayed when the location is not found -->
+        <div class="not-found">
+            <img src="images/404.png">
+            <p>Location not found</p>
+        </div>
+
+        <!-- Weather information display -->
+        <div class="weather-box">
+            <img src="">
+            <!-- Display temperature -->
+            <p class="temperature"></p>
+            <!-- Display weather description -->
+            <p class="description"></p>
+        </div>
+
+        <!-- Additional weather details -->
+        <div class="weather-details">
+            <!-- Display humidity information -->
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <!-- Actual humidity value -->
+                    <span></span>
+                    <!-- Label for humidity -->
+                    <p>Humidity</p>
+                </div>
+            </div>   
+            <!-- Display wind speed information -->
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <!-- Actual wind speed value -->
+                    <span></span>
+                    <!-- Label for wind speed -->
+                    <p>Wind Speed</p>
+                </div>
+            </div>   
+        </div>
+
+    </div>
+
+    <!-- Include Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <!-- Include your custom JavaScript file -->
+    <script src="index.js"></script>
+    
+</body>
+</html>
